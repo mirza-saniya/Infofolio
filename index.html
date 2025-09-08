@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoFolio - Saniya Mirza S</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header section */
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ffece6;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 25px;
+      background-color: rgba(255,255,255,0.2);
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+
+    /* Main sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #ff6f61;
+    }
+
+    /* About */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    #about img {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 5px solid #ff6f61;
+    }
+    #about .bio {
+      flex: 1;
+      font-size: 1.1em;
+    }
+
+    /* Skills */
+    #skills {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    #skills div {
+      background-color: #ffece6;
+      padding: 20px 40px;
+      border-radius: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    #skills div:hover {
+      transform: scale(1.05);
+    }
+
+    /* Projects */
+    #projects {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    #projects .project {
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    #projects .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    #projects .project h3 {
+      color: #ff6f61;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+    #projects .project p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    #projects .project a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #ff6f61;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+    #projects .project a:hover {
+      background-color: #ff3b2f;
+    }
+
+    /* Contact */
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    #contact input, #contact textarea {
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    #contact button {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6f61;
+      color: white;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #contact button:hover {
+      background-color: #ff3b2f;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #ff6f61;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saniya Mirza S</h1>
+    <p>Welcome to InfoFolio - My Digital Portfolio</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <img src="https://via.placeholder.com/250" alt="Saniya Mirza S">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>Hello! I'm Saniya Mirza S, a passionate web developer. I created InfoFolio as my first digital portfolio project to showcase my skills in HTML, CSS, and JavaScript. I enjoy creating clean, responsive, and user-friendly web experiences.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+  </section>
+
+  <section id="projects">
+    <h2>Project</h2>
+    <div class="project">
+      <h3>InfoFolio</h3>
+      <p>InfoFolio is my first digital portfolio project, designed to showcase my skills in HTML, CSS, and JavaScript. It is fully responsive, visually appealing, and easy to navigate, giving viewers a quick overview of my abilities as a web developer.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Saniya Mirza S | InfoFolio
+  </footer>
+
+</body>
+</html>
